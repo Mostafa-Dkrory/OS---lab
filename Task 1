@@ -1,0 +1,52 @@
+(1)(I)
+dkrory@ubuntu:~$ mkdir directory
+dkrory@ubuntu:~$ cd directory
+dkrory@ubuntu:~/directory$ mkdir subdir1 subdir2
+(II)
+dkrory@ubuntu:~/directory$ cd subdir1
+dkrory@ubuntu:~/directory/subdir1$ cat>file1
+this is the first file
+dkrory@ubuntu:~/directory/subdir1$ cat>file2
+this is the second file
+dkrory@ubuntu:~/directory/subdir1$ cat>file3
+this is the third file
+dkrory@ubuntu:~/directory/subdir1$ ls
+file1  file2  file3
+(III)
+dkrory@ubuntu:~/directory/subdir1$ cp file1 ../subdir2
+dkrory@ubuntu:~/directory/subdir1$ cd ../
+dkrory@ubuntu:~/directory$ cd subdir2
+dkrory@ubuntu:~/directory/subdir2$ ls
+file1
+(IV)
+dkrory@ubuntu:~$ ls|wc -l >file
+(V)
+dkrory@ubuntu:~$ ls [d,D]*
+Desktop:
+
+directory:
+subdir1  subdir2
+
+Documents:
+
+Downloads:
+
+(VI)
+dkrory@ubuntu:~$ ls | wc -l 
+10
+
+
+(2)
+dkrory@ubuntu:~$ date;ls;pwd
+Sat May  1 05:06:33 AM PDT 2021
+Desktop    Documents  Music     Public  Templates
+directory  Downloads  Pictures  snap    Videos
+/home/dkrory
+#or
+dkrory@ubuntu:~$ date
+Sat May  1 05:06:41 AM PDT 2021
+dkrory@ubuntu:~$ ls
+Desktop    Documents  Music     Public  Templates
+directory  Downloads  Pictures  snap    Videos
+dkrory@ubuntu:~$ pwd
+/home/dkrory
